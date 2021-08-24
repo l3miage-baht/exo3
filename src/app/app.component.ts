@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'exo3';
+
+  count: number;
+
+  constructor() {
+    this.count = 0;
+   }
+
+   plus1(): void{
+    console.log('plus 1');
+    this.count++;
+   }
+
+   moins1(): void{
+    console.log('plus 1');
+    this.count--;
+   }
 }
